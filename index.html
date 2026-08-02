@@ -312,1243 +312,471 @@
                 </div>
                 <div class="neo-card bg-white rounded-2xl p-6">
                     <div class="w-16 h-16 bg-[#6BC5FF] neo-border rounded-xl flex items-center justify-center mb-5 text-3xl">⏱️</div>
-                    <div class="sticker bg-[#6BC5FF] mb-3">⏰            font-weight: 700;
-        }
-        .glow-btn:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 0 50px rgba(212, 175, 55, 0.6), 0 0 100px rgba(212, 175, 55, 0.3);
-        }
-
-        .signup-btn {
-            background: rgba(212, 175, 55, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 175, 55, 0.4);
-            color: #d4af37;
-            transition: all 0.3s ease;
-        }
-        .signup-btn:hover {
-            background: rgba(212, 175, 55, 0.2);
-            border-color: #d4af37;
-            transform: translateY(-2px);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-        }
-
-        .download-btn-nav {
-            background: rgba(212, 175, 55, 0.12);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 175, 55, 0.35);
-            color: #d4af37;
-            transition: all 0.3s ease;
-        }
-        .download-btn-nav:hover {
-            background: rgba(212, 175, 55, 0.25);
-            border-color: #d4af37;
-            transform: translateY(-2px);
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
-        }
-
-        .nav-blur {
-            backdrop-filter: blur(20px);
-            background: rgba(10, 14, 39, 0.8);
-        }
-
-        .fade-up {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeUp 0.8s ease forwards;
-        }
-        @keyframes fadeUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .delay-1 {
-            animation-delay: 0.15s;
-        }
-        .delay-2 {
-            animation-delay: 0.3s;
-        }
-        .delay-3 {
-            animation-delay: 0.45s;
-        }
-        .delay-4 {
-            animation-delay: 0.6s;
-        }
-
-        .float-anim {
-            animation: float 6s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-
-        .pulse-ring {
-            position: absolute;
-            border-radius: 50%;
-            border: 2px solid rgba(212, 175, 55, 0.3);
-            animation: pulseRing 3s ease-out infinite;
-        }
-        @keyframes pulseRing {
-            0% {
-                transform: scale(0.8);
-                opacity: 1;
-            }
-            100% {
-                transform: scale(1.6);
-                opacity: 0;
-            }
-        }
-
-        .cta-pulse {
-            animation: ctaPulse 2.5s ease-in-out infinite;
-        }
-        @keyframes ctaPulse {
-            0%,
-            100% {
-                box-shadow: 0 0 30px rgba(212, 175, 55, 0.4), 0 0 60px rgba(212, 175, 55, 0.2);
-            }
-            50% {
-                box-shadow: 0 0 50px rgba(212, 175, 55, 0.7), 0 0 100px rgba(212, 175, 55, 0.4);
-            }
-        }
-
-        .feature-card {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(30, 58, 138, 0.1) 100%);
-            border: 1px solid rgba(212, 175, 55, 0.15);
-            backdrop-filter: blur(10px);
-            transition: all 0.4s ease;
-        }
-        .feature-card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(212, 175, 55, 0.5);
-            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
-        }
-
-        .battle-card {
-            background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
-            border: 1px solid rgba(220, 38, 38, 0.3);
-            transition: all 0.4s ease;
-        }
-        .battle-card:hover {
-            border-color: rgba(220, 38, 38, 0.6);
-            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.15);
-        }
-
-        .stat-number {
-            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .scroll-indicator {
-            animation: scrollBounce 2s ease-in-out infinite;
-        }
-        @keyframes scrollBounce {
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(10px);
-            }
-        }
-
-        .particle {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(212, 175, 55, 0.3);
-            pointer-events: none;
-        }
-
-        .exam-badge {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(30, 58, 138, 0.3));
-            border: 1px solid rgba(212, 175, 55, 0.3);
-        }
-
-        .vs-glow {
-            text-shadow: 0 0 20px rgba(220, 38, 38, 0.8), 0 0 40px rgba(220, 38, 38, 0.4);
-        }
-
-        .leaderboard-row {
-            background: linear-gradient(90deg, rgba(212, 175, 55, 0.08), transparent);
-            border-left: 3px solid #d4af37;
-        }
-
-        @keyframes shimmer {
-            0% {
-                background-position: -200% 0;
-            }
-            100% {
-                background-position: 200% 0;
-            }
-        }
-        .shimmer {
-            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.3), transparent);
-            background-size: 200% 100%;
-            animation: shimmer 3s infinite;
-        }
-
-        .live-dot {
-            animation: livePulse 1.5s ease-in-out infinite;
-        }
-        @keyframes livePulse {
-            0%,
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-            50% {
-                opacity: 0.5;
-                transform: scale(1.2);
-            }
-        }
-
-        .contact-input {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            color: #fff;
-            transition: all 0.3s ease;
-        }
-        .contact-input:focus {
-            outline: none;
-            border-color: #d4af37;
-            background: rgba(255, 255, 255, 0.08);
-            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
-        }
-        .contact-input::placeholder {
-            color: #6b7280;
-        }
-
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(8px);
-            z-index: 100;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
-        }
-        .modal-overlay.active {
-            display: flex;
-            animation: fadeIn 0.3s ease;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .modal-content {
-            background: linear-gradient(135deg, #1a1a2e 0%, #0a0e27 100%);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 1.5rem;
-            max-width: 28rem;
-            width: 100%;
-            padding: 2rem;
-            animation: slideUp 0.4s ease;
-        }
-        @keyframes slideUp {
-            from {
-                transform: translateY(30px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .toast {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            z-index: 200;
-            padding: 1rem 1.5rem;
-            border-radius: 0.75rem;
-            font-weight: 600;
-            transform: translateX(400px);
-            transition: transform 0.4s ease;
-        }
-        .toast.show {
-            transform: translateX(0);
-        }
-        .toast.success {
-            background: #059669;
-            color: #fff;
-        }
-        .toast.error {
-            background: #dc2626;
-            color: #fff;
-        }
-
-        /* Download section badge styles */
-        .store-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.75rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: #fff;
-            min-width: 180px;
-        }
-        .store-badge:hover {
-            background: rgba(255, 255, 255, 0.12);
-            border-color: rgba(212, 175, 55, 0.4);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-        .store-badge .icon {
-            font-size: 2rem;
-            line-height: 1;
-        }
-        .store-badge .label {
-            display: flex;
-            flex-direction: column;
-        }
-        .store-badge .label .small {
-            font-size: 0.6rem;
-            text-transform: uppercase;
-            opacity: 0.6;
-            letter-spacing: 0.05em;
-        }
-        .store-badge .label .big {
-            font-size: 1.1rem;
-            font-weight: 700;
-        }
-
-        /* Sticky download bar */
-        .sticky-download {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 90;
-            background: rgba(10, 14, 39, 0.92);
-            backdrop-filter: blur(20px);
-            border-top: 1px solid rgba(212, 175, 55, 0.15);
-            padding: 0.75rem 1.5rem;
-            display: none;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        @media (max-width: 640px) {
-            .sticky-download {
-                display: flex !important;
-                padding: 0.75rem 1rem;
-            }
-            .sticky-download .text {
-                font-size: 0.8rem;
-            }
-            .sticky-download .btn-group {
-                flex-wrap: wrap;
-                gap: 0.5rem;
-            }
-            .sticky-download .store-badge {
-                padding: 0.4rem 0.8rem;
-                min-width: auto;
-                font-size: 0.7rem;
-            }
-            .sticky-download .store-badge .icon {
-                font-size: 1.2rem;
-            }
-            .sticky-download .store-badge .label .big {
-                font-size: 0.8rem;
-            }
-            .sticky-download .store-badge .label .small {
-                font-size: 0.5rem;
-            }
-        }
-        @media (min-width: 641px) {
-            .sticky-download {
-                display: none !important;
-            }
-        }
-
-        .download-section {
-            background: radial-gradient(ellipse at 30% 40%, #1a237e 0%, #0a0e27 60%),
-                radial-gradient(ellipse at 70% 60%, #1e3a8a 0%, #0a0e27 70%);
-        }
-
-        .qr-placeholder {
-            width: 120px;
-            height: 120px;
-            border-radius: 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px dashed rgba(212, 175, 55, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            color: #6b7280;
-            text-align: center;
-            padding: 0.5rem;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 nav-blur border-b border-yellow-500/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3">
-                <img src="https://image.qwenlm.ai/public_source/3ff4c453-4740-4726-944b-db011792306d/1e04ab4d0-864b-46d5-98b4-f9fc0593e469.png" alt="LastTopper Logo" class="w-10 h-10 rounded-xl" />
-                <span class="text-xl font-bold tracking-tight">Last<span class="gold-text">Topper</span></span>
-            </a>
-            <div class="hidden md:flex items-center gap-8 text-sm text-gray-300">
-                <a href="#features" class="hover:text-yellow-400 transition">Features</a>
-                <a href="#battle" class="hover:text-yellow-400 transition">Battle Mode</a>
-                <a href="#exams" class="hover:text-yellow-400 transition">Exams</a>
-                <a href="#leaderboard" class="hover:text-yellow-400 transition">Leaderboard</a>
-                <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
-                <a href="https://github.com/lasttopper/lasttopper.github.io/releases/download/LastTopper/LastTopper.apk" class="hover:text-yellow-400 transition">Download</a>
-            </div>
-            <div class="flex items-center gap-3">
-                <a href="https://github.com/lasttopper/lasttopper.github.io/releases/download/LastTopper/LastTopper.apk" class="download-btn-nav hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-                    Download App
-                </a>
-                <a href="https://lasttopper.lovable.app/auth" class="signup-btn px-6 py-2.5 rounded-full text-sm font-bold">
-                    Sign Up →
-                </a>
+                    <div class="sticker bg-[#6BC5FF] mb-3">⏰ TIMED</div>
+                    <h3 class="text-xl font-black mb-2">Timed Mock Tests</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Simulate real NEET & JEE exam conditions with AI-timed tests. Get instant detailed solutions and performance analytics.</p>
+                </div>
             </div>
         </div>
-    </nav>
+    </section>
 
-    <!-- Hero Section -->
-    <section class="hero-bg relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
-        <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <div class="particle w-2 h-2 top-1/4 left-1/4"></div>
-            <div class="particle w-3 h-3 top-1/3 right-1/4"></div>
-            <div class="particle w-1 h-1 bottom-1/3 left-1/3"></div>
-            <div class="particle w-2 h-2 top-2/3 right-1/3"></div>
-            <div class="pulse-ring w-64 h-64 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-            <div class="pulse-ring w-96 h-96 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="animation-delay: 1s;"></div>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
-            <div class="text-center lg:text-left">
-                <div class="fade-up inline-flex items-center gap-2 px-4 py-1.5 rounded-full exam-badge text-yellow-300 text-xs font-semibold mb-6">
-                    <span class="w-2 h-2 rounded-full bg-red-500 live-dot"></span>
-                    <span class="live-dot">LIVE</span>
-                    <span class="ml-1">2,847 students battling right now</span>
+    <!-- Battle Mode Section -->
+    <section id="battle" class="py-20 bg-[#1a1a1a] text-white border-y-[3px] border-[#1a1a1a] relative overflow-hidden">
+        <div class="absolute inset-0 pattern-dots opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <div class="sticker bg-[#FF5757] text-white mb-4 inline-block">🔥 BATTLE MODE</div>
+                <h2 class="text-4xl sm:text-5xl font-black mb-4 tracking-tight">Challenge. Compete.<br><span class="bg-[#FF5757] px-2 inline-block" style="border: 3px solid white; box-shadow: 6px 6px 0px rgba(255,255,255,0.3);">Conquer.</span></h2>
+                <p class="text-gray-300 max-w-2xl mx-auto text-lg">Go head-to-head with thousands of NEET & IIT JEE aspirants in real-time battles. Climb the leaderboard and prove you're the topper.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="neo-card bg-[#FFE566] text-[#1a1a1a] rounded-2xl p-6 text-center" style="border-color: white;">
+                    <span class="text-5xl mb-4 block">⚔️</span>
+                    <h3 class="text-lg font-black mb-2">1v1 Live Battles</h3>
+                    <p class="text-gray-700 text-sm">Challenge any student or get matched randomly. Answer questions faster and more accurately to win XP and climb ranks.</p>
                 </div>
-
-                <h1 class="fade-up delay-1 text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight mb-6">
-                    Crack <span class="gold-text">NEET</span> &<br/>
-                    <span class="gold-text">IIT JEE</span> with<br/>
-                    <span class="bg-gradient-to-r from-yellow-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">AI Power</span>
-                </h1>
-
-                <p class="fade-up delay-2 text-lg md:text-xl text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0">
-                    India's first AI-powered question bank with live battle mode. Compete with thousands of aspirants, track your rank, and become the <span class="gold-text font-semibold">Last Topper</span>.
-                </p>
-
-                <div class="fade-up delay-2 flex flex-wrap gap-3 mb-8 justify-center lg:justify-start">
-                    <span class="px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 text-sm font-medium"> NEET 2026</span>
-                    <span class="px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-sm font-medium">⚙️ JEE Main</span>
-                    <span class="px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-sm font-medium">🏆 JEE Advanced</span>
+                <div class="neo-card bg-[#FFA64D] text-[#1a1a1a] rounded-2xl p-6 text-center" style="border-color: white;">
+                    <span class="text-5xl mb-4 block">🏆</span>
+                    <h3 class="text-lg font-black mb-2">Tournament Mode</h3>
+                    <p class="text-gray-700 text-sm">Weekly & monthly tournaments with real prizes. Compete against the best minds preparing for NEET and IIT JEE.</p>
                 </div>
-
-                <div class="fade-up delay-3 flex flex-col sm:flex-row gap-4 items-center lg:justify-start justify-center">
-                    <a href="https://lasttopper.lovable.app/auth" class="glow-btn cta-pulse px-10 py-4 rounded-full text-lg flex items-center gap-3">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        Continue to Learn
-                    </a>
-                    <a href="https://github.com/lasttopper/lasttopper.github.io/releases/download/LastTopper/LastTopper.apk" class="text-gray-300 hover:text-yellow-400 transition flex items-center gap-2 text-sm font-medium border border-white/10 hover:border-yellow-400/40 px-6 py-3 rounded-full">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-                        Download App
-                    </a>
+                <div class="neo-card bg-[#C4A1FF] text-[#1a1a1a] rounded-2xl p-6 text-center" style="border-color: white;">
+                    <span class="text-5xl mb-4 block">📊</span>
+                    <h3 class="text-lg font-black mb-2">Global Leaderboard</h3>
+                    <p class="text-gray-700 text-sm">Track your position among 25,000+ aspirants. See where you stand in your city, state, and across India.</p>
                 </div>
+            </div>
 
-                <div class="fade-up delay-4 mt-10 flex items-center gap-6 justify-center lg:justify-start">
-                    <div class="flex -space-x-2">
-                        <div class="w-9 h-9 rounded-full bg-gradient-to-br from-pink-400 to-red-400 border-2 border-[#0a0e27] flex items-center justify-center text-xs font-bold">A</div>
-                        <div class="w-9 h-9 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 border-2 border-[#0a0e27] flex items-center justify-center text-xs font-bold">R</div>
-                        <div class="w-9 h-9 rounded-full bg-gradient-to-br from-yellow-400 to-orange-400 border-2 border-[#0a0e27] flex items-center justify-center text-xs font-bold">S</div>
-                        <div class="w-9 h-9 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 border-2 border-[#0a0e27] flex items-center justify-center text-xs font-bold">+</div>
+            <!-- Live Battle Preview -->
+            <div class="max-w-4xl mx-auto">
+                <div class="neo-border-thick rounded-2xl bg-white text-[#1a1a1a] overflow-hidden neo-shadow-lg" style="box-shadow: 8px 8px 0px rgba(255,255,255,0.3);">
+                    <div class="bg-[#FF5757] px-6 py-3 flex items-center justify-between">
+                        <span class="text-white font-black text-sm flex items-center gap-2">
+                            <span class="w-2 h-2 bg-white rounded-full blink"></span> LIVE BATTLE
+                        </span>
+                        <span class="text-white mono text-lg font-black">04:32</span>
                     </div>
-                    <div class="text-sm text-gray-400">
-                        <div class="flex items-center gap-1 text-yellow-400">
-                            ★★★★★
-                            <span class="text-white font-bold ml-1">4.9</span>
+                    <div class="p-6">
+                        <div class="grid grid-cols-3 gap-4 mb-6 items-center">
+                            <div class="text-center p-4 rounded-xl bg-[#6BC5FF]/20 neo-border">
+                                <p class="text-xs font-black text-[#6BC5FF]">YOU</p>
+                                <p class="font-black">Rahul S.</p>
+                                <p class="text-xs font-bold text-gray-500">Rank #234</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="text-3xl font-black text-[#FF5757]">VS</span>
+                            </div>
+                            <div class="text-center p-4 rounded-xl bg-[#FF6B9D]/20 neo-border">
+                                <p class="text-xs font-black text-[#FF6B9D]">OPP</p>
+                                <p class="font-black">Priya M.</p>
+                                <p class="text-xs font-bold text-gray-500">Rank #189</p>
+                            </div>
                         </div>
-                        <div>from 25,000+ aspirants</div>
-      -4 items-center lg:justify-start justify-center">
-        <a href="https://lasttopper.lovable.app/auth" class="glow-btn cta-pulse px-10 py-4 rounded-full text-lg flex items-center gap-3">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          Continue to Learn
-        </a>
-        <a href="https://lasttopper.lovable.app/auth" class="text-gray-300 hover:text-yellow-400 transition flex items-center gap-2 text-sm font-medium">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-          Free Sign Up
-        </a>
-      </div>
+                        <div class="bg-[#FFF8E7] neo-border rounded-xl p-4 mb-4">
+                            <p class="text-xs font-bold text-gray-500 mb-1">PHYSICS • ELECTROMAGNETISM</p>
+                            <p class="text-sm font-bold">A charge q is placed at the centre of a cube. The electric flux through any face is:</p>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center gap-3 p-3 rounded-lg bg-[#7EE787] neo-border">
+                                <span class="font-black text-sm">A) q/6ε₀</span>
+                                <span class="text-xs font-black ml-auto sticker bg-white">✓ Selected</span>
+                            </div>
+                            <div class="p-3 rounded-lg neo-border bg-white">
+                                <span class="font-bold text-sm text-gray-500">B) q/ε₀</span>
+                            </div>
+                            <div class="p-3 rounded-lg neo-border bg-white">
+                                <span class="font-bold text-sm text-gray-500">C) q/4πε₀</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="sticker bg-[#FFE566]">Score: 2,450 XP</span>
+                            <span class="sticker bg-[#FFA64D]">Streak: 🔥 12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      <div class="fade-up delay-4 mt-10 flex items-center gap-6 justify-center lg:justify-start">
-        <div class="flex -space-x-2">
-          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-pink-400 to-red-400 border-2 border-[#0a0e27] flex items-center justify-center text-xs font-bold">A</div>
-          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 border-2 border-[#0a0e27] flex items-center justify-center text-xs font-bold">R</div>
-          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-yellow-400 to-orange-400 border-2 border-[#0a0e27] flex items-center justify-center text-xs font-bold">S</div>
-          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 border-2 border-[#0a0e27] flex items-center justify-center text-xs font-bold">+</div>
+            <div class="text-center mt-10">
+                <a href="https://lasttopper.lovable.app/auth" class="neo-btn bg-[#FF5757] text-white px-8 py-4 rounded-xl text-lg inline-block">⚔️ Start Battling Now</a>
+            </div>
         </div>
-        <div class="text-sm text-gray-400">
-          <div class="flex items-center gap-1 text-yellow-400">
-            ★★★★★
-            <span class="text-white font-bold ml-1">4.9</span>
-          </div>
-          <div>from 25,000+ aspirants</div>
+    </section>
+
+    <!-- Exams Section -->
+    <section id="exams" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="sticker bg-[#7EE787] mb-4 inline-block">📚 EXAM PREPARATION</div>
+                <h2 class="text-4xl sm:text-5xl font-black mb-4 tracking-tight">Built for India's<br><span class="bg-[#6BC5FF] px-2 neo-border inline-block">Toughest Exams</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Comprehensive coverage of NEET and IIT JEE syllabus with latest pattern questions.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="neo-card bg-[#6BC5FF] rounded-2xl p-8">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-5xl">🩺</span>
+                        <div>
+                            <h3 class="text-3xl font-black">NEET</h3>
+                            <p class="font-bold text-gray-700">Medical Entrance</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-2 font-bold text-sm"><span class="w-6 h-6 bg-white neo-border rounded flex items-center justify-center text-xs">✓</span> Physics, Chemistry, Biology (Botany + Zoology)</li>
+                        <li class="flex items-center gap-2 font-bold text-sm"><span class="w-6 h-6 bg-white neo-border rounded flex items-center justify-center text-xs">✓</span> 200 questions • 720 marks pattern</li>
+                        <li class="flex items-center gap-2 font-bold text-sm"><span class="w-6 h-6 bg-white neo-border rounded flex items-center justify-center text-xs">✓</span> NCERT-focused AI questions</li>
+                        <li class="flex items-center gap-2 font-bold text-sm"><span class="w-6 h-6 bg-white neo-border rounded flex items-center justify-center text-xs">✓</span> Previous year papers (2013-2026)</li>
+                        <li class="flex items-center gap-2 font-bold text-sm"><span class="w-6 h-6 bg-white neo-border rounded flex items-center justify-center text-xs">✓</span> 45,000+ aspirants</li>
+                    </ul>
+                    <a href="https://lasttopper.lovable.app/auth" class="neo-btn bg-white px-5 py-2.5 rounded-lg inline-block font-black">Start NEET Prep →</a>
+                </div>
+                <div class="neo-card bg-[#C4A1FF] rounded-2xl p-8">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-5xl">⚙️</span>
+                        <div>
+                            <h3 class="text-3xl font-black">IIT JEE</h3>
+                            <p class="font-bold text-gray-700">Engineering Entrance</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-2 font-bold text-sm"><span class="w-6 h-6 bg-white neo-border rounded flex items-center justify-center text-xs">✓</span> Physics, Chemistry, Mathematics</li>
+                        <li class="flex items-center gap-2 font-bold text-sm"><span class="w-6 h-6 bg-white neo-border rounded flex items-center justify-center text-xs">✓</span> JEE Main + Advanced pattern</li>
+                        <li class="flex items-center gap-2 font-bold text-sm"><span class="w-6 h-6 bg-white neo-border rounded flex items-center justify-center text-xs">✓</span> Multi-concept AI questions</li>
+                        <li class="flex items-center gap-2 font-bold text-sm"><span class="w-6 h-6 bg-white neo-border rounded flex items-center justify-center text-xs">✓</span> Previous year papers (2009-2026)</li>
+                        <li class="flex items-center gap-2 font-bold text-sm"><span class="w-6 h-6 bg-white neo-border rounded flex items-center justify-center text-xs">✓</span> 38,000+ aspirants</li>
+                    </ul>
+                    <a href="https://lasttopper.lovable.app/auth" class="neo-btn bg-white px-5 py-2.5 rounded-lg inline-block font-black">Start JEE Prep →</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="fade-up delay-2 relative flex justify-center">
-      <div class="absolute inset-0 bg-gradient-to-r from-yellow-500/10 to-blue-500/10 rounded-full blur-3xl"></div>
-      <img src="https://image.qwenlm.ai/public_source/3ff4c453-4740-4726-944b-db011792306d/175504e2f-e2e8-4f22-a912-4453b91d95ba.png" alt="Students battling" class="float-anim relative z-10 max-w-full h-auto rounded-2xl shadow-2xl" style="max-height: 550px; object-fit: cover;" />
-      
-      <div class="absolute -bottom-4 -left-4 bg-[#0a0e27]/90 backdrop-blur-xl border border-yellow-500/30 rounded-2xl p-4 shadow-2xl z-20 hidden md:block">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center">🏆</div>
-          <div>
-            <div class="text-xs text-gray-400">Your Rank</div>
-            <div class="text-lg font-bold gold-text">#1,247</div>
-          </div>
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="py-20 bg-[#FFE566] border-y-[3px] border-[#1a1a1a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="sticker bg-[#FFA64D] mb-4 inline-block">🏆 LIVE LEADERBOARD</div>
+                <h2 class="text-4xl sm:text-5xl font-black mb-4 tracking-tight">Top Toppers<br><span class="bg-white px-2 neo-border inline-block">This Week</span></h2>
+                <p class="text-gray-700 text-lg">See who's leading the race. Will you be next?</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="neo-border-thick neo-shadow-lg rounded-2xl bg-white overflow-hidden">
+                    <div class="bg-[#FFA64D] px-6 py-3 flex items-center justify-between border-b-[3px] border-[#1a1a1a]">
+                        <span class="font-black text-sm">🏆 Weekly Champions</span>
+                        <span class="mono text-xs font-bold">Updated 2 min ago</span>
+                    </div>
+                    <div class="divide-y-[3px] divide-[#1a1a1a]">
+                        <div class="flex items-center gap-4 px-6 py-4 hover:bg-[#FFF8E7] transition">
+                            <span class="text-3xl">🥇</span>
+                            <div class="w-11 h-11 rounded-full bg-[#FFE566] neo-border flex items-center justify-center font-black text-sm">AK</div>
+                            <div class="flex-1">
+                                <p class="font-black">Arjun Kumar</p>
+                                <p class="text-xs font-bold text-gray-500">JEE Advanced • Delhi</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-black text-[#FFA64D]">18,450 XP</p>
+                                <p class="text-xs font-bold text-gray-500">142 battles</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 px-6 py-4 hover:bg-[#FFF8E7] transition">
+                            <span class="text-3xl">🥈</span>
+                            <div class="w-11 h-11 rounded-full bg-gray-300 neo-border flex items-center justify-center font-black text-sm">SP</div>
+                            <div class="flex-1">
+                                <p class="font-black">Sneha Patel</p>
+                                <p class="text-xs font-bold text-gray-500">NEET • Mumbai</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-black">17,820 XP</p>
+                                <p class="text-xs font-bold text-gray-500">138 battles</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 px-6 py-4 hover:bg-[#FFF8E7] transition">
+                            <span class="text-3xl">🥉</span>
+                            <div class="w-11 h-11 rounded-full bg-[#FFA64D] neo-border flex items-center justify-center font-black text-sm">VR</div>
+                            <div class="flex-1">
+                                <p class="font-black">Vikram Reddy</p>
+                                <p class="text-xs font-bold text-gray-500">JEE Main • Hyderabad</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-black">16,940 XP</p>
+                                <p class="text-xs font-bold text-gray-500">129 battles</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 px-6 py-4 hover:bg-[#FFF8E7] transition">
+                            <span class="font-black w-8 text-center text-lg">4</span>
+                            <div class="w-11 h-11 rounded-full bg-[#6BC5FF] neo-border flex items-center justify-center font-black text-sm">AN</div>
+                            <div class="flex-1">
+                                <p class="font-black">Ananya Nair</p>
+                                <p class="text-xs font-bold text-gray-500">NEET • Bangalore</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-black">15,670 XP</p>
+                                <p class="text-xs font-bold text-gray-500">121 battles</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 px-6 py-4 hover:bg-[#FFF8E7] transition">
+                            <span class="font-black w-8 text-center text-lg">5</span>
+                            <div class="w-11 h-11 rounded-full bg-[#FF6B9D] neo-border flex items-center justify-center font-black text-sm text-white">RS</div>
+                            <div class="flex-1">
+                                <p class="font-black">Rohan Sharma</p>
+                                <p class="text-xs font-bold text-gray-500">JEE Advanced • Kota</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-black">14,890 XP</p>
+                                <p class="text-xs font-bold text-gray-500">115 battles</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#FFF8E7] px-6 py-4 border-t-[3px] border-[#1a1a1a] flex items-center justify-between">
+                        <span class="font-bold text-sm">Your rank: <span class="font-black text-[#FF6B9D]">#2,847</span></span>
+                        <a href="https://lasttopper.lovable.app/auth" class="font-black text-sm hover:underline">Join the Battle →</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="absolute -top-4 -right-4 bg-[#0a0e27]/90 backdrop-blur-xl border border-red-500/30 rounded-2xl p-4 shadow-2xl z-20 hidden md:block">
-        <div class="flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-red-500 live-dot"></span>
-          <span class="text-xs font-bold text-red-400">BATTLE LIVE</span>
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="sticker bg-[#FF6B9D] text-white mb-4 inline-block">💬 SUCCESS STORIES</div>
+                <h2 class="text-4xl sm:text-5xl font-black mb-4 tracking-tight">Loved by <span class="bg-[#FFE566] px-2 neo-border inline-block">Toppers</span></h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="neo-card bg-[#FFF8E7] rounded-2xl p-6">
+                    <div class="text-lg font-bold text-[#FFA64D] mb-3">★★★★★</div>
+                    <p class="text-sm font-medium mb-6 leading-relaxed">"The battle mode kept me motivated throughout my NEET prep. I scored 685/720 and got AIIMS Delhi. LastTopper's AI questions were exactly like the actual exam!"</p>
+                    <div class="flex items-center gap-3 pt-4 border-t-[3px] border-[#1a1a1a]">
+                        <div class="w-11 h-11 rounded-full bg-[#FF6B9D] neo-border flex items-center justify-center font-black text-white text-sm">P</div>
+                        <div>
+                            <p class="font-black text-sm">Priya Mehta</p>
+                            <p class="text-xs font-bold text-gray-500">NEET 2025 • AIR 142</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neo-card bg-[#FFF8E7] rounded-2xl p-6">
+                    <div class="text-lg font-bold text-[#FFA64D] mb-3">★★★★★</div>
+                    <p class="text-sm font-medium mb-6 leading-relaxed">"The AI weakness analysis is magical. It identified my weak areas in Organic Chemistry and created custom practice sets. Cracked IIT Bombay with 99.8 percentile!"</p>
+                    <div class="flex items-center gap-3 pt-4 border-t-[3px] border-[#1a1a1a]">
+                        <div class="w-11 h-11 rounded-full bg-[#6BC5FF] neo-border flex items-center justify-center font-black text-sm">A</div>
+                        <div>
+                            <p class="font-black text-sm">Aditya Singh</p>
+                            <p class="text-xs font-bold text-gray-500">JEE Advanced 2025 • AIR 89</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="neo-card bg-[#FFF8E7] rounded-2xl p-6">
+                    <div class="text-lg font-bold text-[#FFA64D] mb-3">★★★★★</div>
+                    <p class="text-sm font-medium mb-6 leading-relaxed">"Competing with friends in battle mode made studying fun! We pushed each other every day. Best investment for my JEE Main preparation. Scored 99.5 percentile."</p>
+                    <div class="flex items-center gap-3 pt-4 border-t-[3px] border-[#1a1a1a]">
+                        <div class="w-11 h-11 rounded-full bg-[#C4A1FF] neo-border flex items-center justify-center font-black text-sm">K</div>
+                        <div>
+                            <p class="font-black text-sm">Kavya Reddy</p>
+                            <p class="text-xs font-bold text-gray-500">JEE Main 2025 • 99.5%ile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="text-sm font-bold mt-1">Physics • Q. 12/30</div>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator text-gray-400 text-xs flex flex-col items-center gap-2">
-    <span>Scroll to explore</span>
-    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-  </div>
-</section>
-
-<!-- Stats Section -->
-<section class="py-16 border-y border-yellow-500/10 bg-black/40">
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
-    <div class="text-center">
-      <div class="stat-number text-4xl md:text-5xl font-bold mb-2">25K+</div>
-      <div class="text-gray-400 text-sm">Active Aspirants</div>
-    </div>
-    <div class="text-center">
-      <div class="stat-number text-4xl md:text-5xl font-bold mb-2">1.2L+</div>
-      <div class="text-gray-400 text-sm">AI Questions</div>
-    </div>
-    <div class="text-center">
-      <div class="stat-number text-4xl md:text-5xl font-bold mb-2">8,500+</div>
-      <div class="text-gray-400 text-sm">Daily Battles</div>
-    </div>
-    <div class="text-center">
-      <div class="stat-number text-4xl md:text-5xl font-bold mb-2">94%</div>
-      <div class="text-gray-400 text-sm">Success Rate</div>
-    </div>
-  </div>
-</section>
-
-<!-- AI Features Section -->
-<section id="features" class="py-24 hero-bg relative">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <div class="inline-block px-4 py-1 rounded-full exam-badge text-yellow-300 text-xs font-semibold mb-4">AI-POWERED FEATURES</div>
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Smart Learning, <span class="gold-text">Smarter Results</span></h2>
-      <p class="text-gray-400 max-w-2xl mx-auto">Our AI understands your strengths and weaknesses, delivering personalized questions that maximize your score potential.</p>
-    </div>
-
-    <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
-      <div>
-        <img src="https://image.qwenlm.ai/public_source/3ff4c453-4740-4726-944b-db011792306d/1581308bd-54a1-4fbb-8a89-c376a7eebea5.png" alt="AI Learning" class="rounded-2xl shadow-2xl w-full" />
-      </div>
-      <div class="space-y-6">
-        <div class="feature-card p-6 rounded-2xl">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl gold-gradient flex items-center justify-center flex-shrink-0">
-              <svg class="w-6 h-6 text-[#0a0e27]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#6BC5FF] border-y-[3px] border-[#1a1a1a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="sticker bg-white mb-4 inline-block">📬 GET IN TOUCH</div>
+                <h2 class="text-4xl sm:text-5xl font-black mb-4 tracking-tight">Have a Question?<br><span class="bg-white px-2 neo-border inline-block">We're Here.</span></h2>
+                <p class="text-gray-700 max-w-2xl mx-auto text-lg">Send us a message and our team will get back to you within 24 hours.</p>
             </div>
-            <div>
-              <h3 class="text-xl font-bold mb-2">AI Question Generator</h3>
-              <p class="text-gray-400 text-sm leading-relaxed">1.2 Lakh+ questions across Physics, Chemistry, Maths & Biology. AI generates new questions daily based on latest exam patterns.</p>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-4">
+                    <div class="neo-card bg-white rounded-xl p-4 flex items-start gap-4">
+                        <span class="text-3xl">💬</span>
+                        <div>
+                            <h4 class="font-black">Telegram Support</h4>
+                            <p class="text-gray-600 text-sm font-medium">Fastest response channel</p>
+                        </div>
+                    </div>
+                    <div class="neo-card bg-white rounded-xl p-4 flex items-start gap-4">
+                        <span class="text-3xl">⚡</span>
+                        <div>
+                            <h4 class="font-black">24/7 AI Assistant</h4>
+                            <p class="text-gray-600 text-sm font-medium">Available inside the app</p>
+                        </div>
+                    </div>
+                    <div class="neo-card bg-white rounded-xl p-4 flex items-start gap-4">
+                        <span class="text-3xl">📧</span>
+                        <div>
+                            <h4 class="font-black">Email Support</h4>
+                            <p class="text-gray-600 text-sm font-medium">foolmr43@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="neo-card bg-white rounded-xl p-4 flex items-start gap-4">
+                        <span class="text-3xl">🕐</span>
+                        <div>
+                            <h4 class="font-black">Response Time</h4>
+                            <p class="text-gray-600 text-sm font-medium">Usually within 2 hours</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="neo-border-thick neo-shadow-lg bg-white rounded-2xl p-6 space-y-4" onsubmit="event.preventDefault(); alert('Message sent! We will get back to you soon.');">
+                    <div>
+                        <label class="font-black text-sm block mb-1">Your Name</label>
+                        <input type="text" placeholder="Enter your name" class="w-full px-4 py-3 neo-border rounded-lg font-medium focus:outline-none focus:shadow-[4px_4px_0px_#1a1a1a] transition" required>
+                    </div>
+                    <div>
+                        <label class="font-black text-sm block mb-1">Email Address</label>
+                        <input type="email" placeholder="you@email.com" class="w-full px-4 py-3 neo-border rounded-lg font-medium focus:outline-none focus:shadow-[4px_4px_0px_#1a1a1a] transition" required>
+                    </div>
+                    <div>
+                        <label class="font-black text-sm block mb-1">Preparing For</label>
+                        <select class="w-full px-4 py-3 neo-border rounded-lg font-medium bg-white focus:outline-none">
+                            <option>NEET</option>
+                            <option>JEE Main</option>
+                            <option>JEE Advanced</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="font-black text-sm block mb-1">Your Message</label>
+                        <textarea placeholder="Tell us what's on your mind..." rows="4" class="w-full px-4 py-3 neo-border rounded-lg font-medium resize-none focus:outline-none focus:shadow-[4px_4px_0px_#1a1a1a] transition" required></textarea>
+                    </div>
+                    <button type="submit" class="neo-btn bg-[#FF6B9D] text-white w-full px-6 py-3 rounded-lg text-base">Send Message →</button>
+                    <p class="text-gray-500 text-xs text-center font-bold">🔒 Your information is secure and never shared.</p>
+                </form>
             </div>
-          </div>
         </div>
+    </section>
 
-        <div class="feature-card p-6 rounded-2xl">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl gold-gradient flex items-center justify-center flex-shrink-0">
-              <svg class="w-6 h-6 text-[#0a0e27]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+    <!-- Bottom CTA -->
+    <section class="py-20 bg-[#1a1a1a] text-white border-y-[3px] border-[#1a1a1a] relative overflow-hidden">
+        <div class="absolute inset-0 pattern-dots opacity-10"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <div class="w-20 h-20 bg-[#FFE566] neo-border-thick rounded-2xl flex items-center justify-center font-black text-3xl mx-auto mb-6" style="border-color: white; box-shadow: 6px 6px 0px rgba(255,255,255,0.3);">L</div>
+            <h2 class="text-4xl sm:text-5xl font-black mb-4 tracking-tight">Ready to become the<br><span class="bg-[#7EE787] text-[#1a1a1a] px-3 inline-block" style="border: 3px solid white; box-shadow: 6px 6px 0px rgba(255,255,255,0.3);">Last Topper?</span></h2>
+            <p class="text-gray-300 text-lg mb-8 max-w-xl mx-auto">Join 25,000+ NEET & IIT JEE aspirants. AI-powered questions. Live battles. Real results.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+                <a href="https://lasttopper.lovable.app/auth" class="neo-btn bg-[#FF6B9D] text-white px-8 py-4 rounded-xl text-lg inline-block">Continue to Learn →</a>
+                <a href="https://github.com/lasttopper/lasttopper.github.io/releases/download/LastTopper/LastTopper.apk" download="LastTopper.apk" class="download-btn inline-flex items-center justify-center px-8 py-4 rounded-xl text-lg">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                    Download App (Android)
+                </a>
             </div>
-            <div>
-              <h3 class="text-xl font-bold mb-2">Weakness Analysis</h3>
-              <p class="text-gray-400 text-sm leading-relaxed">AI identifies your weak topics and creates custom practice sets. Focus on what matters most for your exam.</p>
-            </div>
-          </div>
+            <p class="text-gray-500 text-sm font-bold">✓ Free to start • ✓ No credit card • ✓ Instant access</p>
         </div>
+    </section>
 
-        <div class="feature-card p-6 rounded-2xl">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl gold-gradient flex items-center justify-center flex-shrink-0">
-              <svg class="w-6 h-6 text-[#0a0e27]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+    <!-- Footer -->
+    <footer class="py-12 bg-[#FFF8E7]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-[#FFE566] neo-border flex items-center justify-center font-black text-lg">L</div>
+                        <span class="text-lg font-black">LastTopper</span>
+                    </div>
+                    <p class="text-gray-600 text-sm font-medium">India's #1 AI-powered NEET & IIT JEE preparation platform with live battle mode.</p>
+                </div>
+                <div>
+                    <h4 class="font-black mb-4 text-sm uppercase tracking-wider">Exams</h4>
+                    <ul class="space-y-2 text-sm font-bold">
+                        <li><a href="#" class="hover:underline">NEET</a></li>
+                        <li><a href="#" class="hover:underline">JEE Main</a></li>
+                        <li><a href="#" class="hover:underline">JEE Advanced</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-black mb-4 text-sm uppercase tracking-wider">Features</h4>
+                    <ul class="space-y-2 text-sm font-bold">
+                        <li><a href="#features" class="hover:underline">AI Questions</a></li>
+                        <li><a href="#battle" class="hover:underline">Battle Mode</a></li>
+                        <li><a href="#" class="hover:underline">Mock Tests</a></li>
+                        <li><a href="#leaderboard" class="hover:underline">Leaderboard</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-black mb-4 text-sm uppercase tracking-wider">Legal & Support</h4>
+                    <ul class="space-y-2 text-sm font-bold mb-4">
+                        <li><a href="https://lasttopper.lovable.app/terms" class="hover:underline">Terms of Service</a></li>
+                        <li><a href="https://lasttopper.lovable.app/privacy" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#contact" class="hover:underline">Contact Us</a></li>
+                    </ul>
+                    <a href="https://github.com/lasttopper/lasttopper.github.io/releases/download/LastTopper/LastTopper.apk" download="LastTopper.apk" class="download-btn inline-flex items-center px-4 py-2 rounded-lg text-sm">
+                        <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                        Download APK
+                    </a>
+                </div>
             </div>
-            <div>
-              <h3 class="text-xl font-bold mb-2">Timed Mock Tests</h3>
-              <p class="text-gray-400 text-sm leading-relaxed">Simulate real NEET & JEE exam conditions with AI-timed tests. Get instant detailed solutions and performance analytics.</p>
+            <div class="border-t-[3px] border-[#1a1a1a] pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="text-gray-600 text-sm font-bold">© 2026 LastTopper. Made with ❤️ for Indian aspirants.</p>
+                <div class="flex items-center gap-4 text-sm font-bold">
+                    <a href="https://lasttopper.lovable.app/terms" class="hover:underline">Terms</a>
+                    <span>•</span>
+                    <a href="https://lasttopper.lovable.app/privacy" class="hover:underline">Privacy</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<!-- Battle Mode Section -->
-<section id="battle" class="py-24 bg-black/50 relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-br from-red-900/10 via-transparent to-yellow-900/10"></div>
-  
-  <div class="max-w-7xl mx-auto px-6 relative z-10">
-    <div class="text-center mb-16">
-      <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-300 text-xs font-semibold mb-4">
-        <span class="w-2 h-2 rounded-full bg-red-500 live-dot"></span>
-        BATTLE MODE
-      </div>
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Challenge. Compete. <span class="gold-text">Conquer.</span></h2>
-      <p class="text-gray-400 max-w-2xl mx-auto text-lg">Go head-to-head with thousands of NEET & IIT JEE aspirants in real-time battles. Climb the leaderboard and prove you're the topper.</p>
-    </div>
-
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="order-2 lg:order-1 space-y-6">
-        <div class="battle-card p-6 rounded-2xl">
-          <div class="flex items-center gap-4 mb-3">
-            <div class="text-3xl">⚔️</div>
-            <h3 class="text-xl font-bold">1v1 Live Battles</h3>
-          </div>
-          <p class="text-gray-400 text-sm">Challenge any student or get matched randomly. Answer questions faster and more accurately to win XP and climb ranks.</p>
-        </div>
-
-        <div class="battle-card p-6 rounded-2xl">
-          <div class="flex items-center gap-4 mb-3">
-            <div class="text-3xl">🏆</div>
-            <h3 class="text-xl font-bold">Tournament Mode</h3>
-          </div>
-          <p class="text-gray-400 text-sm">Weekly & monthly tournaments with real prizes. Compete against the best minds preparing for NEET and IIT JEE.</p>
-        </div>
-
-        <div class="battle-card p-6 rounded-2xl">
-          <div class="flex items-center gap-4 mb-3">
-            <div class="text-3xl">📊</div>
-            <h3 class="text-xl font-bold">Global Leaderboard</h3>
-          </div>
-          <p class="text-gray-400 text-sm">Track your position among 25,000+ aspirants. See where you stand in your city, state, and across India.</p>
-        </div>
-
-        <a href="https://lasttopper.lovable.app/auth" class="glow-btn inline-flex items-center gap-3 px-8 py-4 rounded-full text-lg font-bold mt-4">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-          Start Battling Now
-        </a>
-      </div>
-
-      <div class="order-1 lg:order-2">
-        <div class="bg-gradient-to-br from-[#1a1a2e] to-[#0a0e27] border border-yellow-500/20 rounded-3xl p-8 shadow-2xl">
-          <div class="flex items-center justify-between mb-6">
-            <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-red-500 live-dot"></span>
-              <span class="text-xs font-bold text-red-400">LIVE BATTLE</span>
-            </div>
-            <div class="text-xs text-gray-400"> 04:32</div>
-          </div>
-
-          <div class="flex items-center justify-between mb-8">
-            <div class="text-center">
-              <div class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-xl font-bold mb-2">YOU</div>
-              <div class="text-sm font-bold">Rahul S.</div>
-              <div class="text-xs text-yellow-400">Rank #234</div>
-            </div>
-            <div class="text-4xl font-black vs-glow text-red-500">VS</div>
-            <div class="text-center">
-              <div class="w-16 h-16 rounded-full bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center text-xl font-bold mb-2">OPP</div>
-              <div class="text-sm font-bold">Priya M.</div>
-              <div class="text-xs text-yellow-400">Rank #189</div>
-            </div>
-          </div>
-
-          <div class="bg-black/40 rounded-xl p-4 mb-4">
-            <div class="text-xs text-gray-400 mb-2">PHYSICS • ELECTROMAGNETISM</div>
-            <div class="text-sm font-medium">A charge q is placed at the centre of a cube. The electric flux through any face is:</div>
-          </div>
-
-          <div class="space-y-2">
-            <div class="bg-blue-500/20 border border-blue-500/40 rounded-lg p-3 text-sm flex justify-between">
-              <span>A) q/6ε₀</span>
-              <span class="text-green-400">✓ Selected</span>
-            </div>
-            <div class="bg-white/5 rounded-lg p-3 text-sm opacity-60">B) q/ε₀</div>
-            <div class="bg-white/5 rounded-lg p-3 text-sm opacity-60">C) q/4ε₀</div>
-          </div>
-
-          <div class="mt-6 flex justify-between items-center">
-            <div class="text-xs text-gray-400">Score: <span class="text-yellow-400 font-bold">2,450 XP</span></div>
-            <div class="text-xs text-gray-400">Streak: <span class="text-red-400 font-bold">🔥 12</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Exams Section -->
-<section id="exams" class="py-24 hero-bg">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <div class="inline-block px-4 py-1 rounded-full exam-badge text-yellow-300 text-xs font-semibold mb-4">EXAM PREPARATION</div>
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Built for <span class="gold-text">India's Toughest Exams</span></h2>
-      <p class="text-gray-400 max-w-2xl mx-auto">Comprehensive coverage of NEET and IIT JEE syllabus with latest pattern questions.</p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="feature-card rounded-3xl p-8 relative overflow-hidden group">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition"></div>
-        <div class="relative">
-          <div class="flex items-center gap-4 mb-6">
-            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center text-3xl">🩺</div>
-            <div>
-              <h3 class="text-2xl font-bold">NEET </h3>
-              <p class="text-gray-400 text-sm">Medical Entrance</p>
-            </div>
-          </div>
-          <div class="space-y-3 mb-6">
-            <div class="flex items-center gap-3 text-sm">
-              <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>Physics, Chemistry, Biology (Botany + Zoology)</span>
-            </div>
-            <div class="flex items-center gap-3 text-sm">
-              <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>200 questions • 720 marks pattern</span>
-            </div>
-            <div class="flex items-center gap-3 text-sm">
-              <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>NCERT-focused AI questions</span>
-            </div>
-            <div class="flex items-center gap-3 text-sm">
-              <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>Previous year papers (2013-2026)</span>
-            </div>
-          </div>
-          <div class="flex items-center justify-between pt-4 border-t border-white/10">
-            <div class="text-sm text-gray-400"><span class="gold-text font-bold">45,000+</span> aspirants</div>
-            <a href="https://lasttopper.lovable.app/auth" class="text-yellow-400 text-sm font-semibold hover:underline">Start NEET Prep →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature-card rounded-3xl p-8 relative overflow-hidden group">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl group-hover:bg-purple-500/20 transition"></div>
-        <div class="relative">
-          <div class="flex items-center gap-4 mb-6">
-            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-3xl">⚙️</div>
-            <div>
-              <h3 class="text-2xl font-bold">IIT JEE </h3>
-              <p class="text-gray-400 text-sm">Engineering Entrance</p>
-            </div>
-          </div>
-          <div class="space-y-3 mb-6">
-            <div class="flex items-center gap-3 text-sm">
-              <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>Physics, Chemistry, Mathematics</span>
-            </div>
-            <div class="flex items-center gap-3 text-sm">
-              <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>JEE Main + Advanced pattern</span>
-            </div>
-            <div class="flex items-center gap-3 text-sm">
-              <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>Multi-concept AI questions</span>
-            </div>
-            <div class="flex items-center gap-3 text-sm">
-              <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>Previous year papers (2009-2026)</span>
-            </div>
-          </div>
-          <div class="flex items-center justify-between pt-4 border-t border-white/10">
-            <div class="text-sm text-gray-400"><span class="gold-text font-bold">38,000+</span> aspirants</div>
-            <a href="https://lasttopper.lovable.app/auth" class="text-yellow-400 text-sm font-semibold hover:underline">Start JEE Prep →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Leaderboard Section -->
-<section id="leaderboard" class="py-24 bg-black/50">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <div class="inline-block px-4 py-1 rounded-full exam-badge text-yellow-300 text-xs font-semibold mb-4">LIVE LEADERBOARD</div>
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Top <span class="gold-text">Toppers</span> This Week</h2>
-      <p class="text-gray-400 max-w-2xl mx-auto">See who's leading the race. Will you be next?</p>
-    </div>
-
-    <div class="max-w-3xl mx-auto">
-      <div class="bg-gradient-to-br from-[#1a1a2e] to-[#0a0e27] border border-yellow-500/20 rounded-3xl overflow-hidden">
-        <div class="p-6 border-b border-white/5 flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl gold-gradient flex items-center justify-center">🏆</div>
-            <div>
-              <div class="font-bold">Weekly Champions</div>
-              <div class="text-xs text-gray-400">Updated 2 min ago</div>
-            </div>
-          </div>
-          <div class="text-xs text-yellow-400 font-semibold">NEET + JEE Combined</div>
-        </div>
-
-        <div class="divide-y divide-white/5">
-          <div class="leaderboard-row p-4 flex items-center gap-4">
-            <div class="w-8 text-center text-2xl">🥇</div>
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center font-bold">AK</div>
-            <div class="flex-1">
-              <div class="font-semibold">Arjun Kumar</div>
-              <div class="text-xs text-gray-400">JEE Advanced • Delhi</div>
-            </div>
-            <div class="text-right">
-              <div class="gold-text font-bold">18,450 XP</div>
-              <div class="text-xs text-gray-400">142 battles won</div>
-            </div>
-          </div>
-
-          <div class="leaderboard-row p-4 flex items-center gap-4">
-            <div class="w-8 text-center text-2xl">🥈</div>
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-300 to-gray-500 flex items-center justify-center font-bold text-black">SP</div>
-            <div class="flex-1">
-              <div class="font-semibold">Sneha Patel</div>
-              <div class="text-xs text-gray-400">NEET • Mumbai</div>
-            </div>
-            <div class="text-right">
-              <div class="gold-text font-bold">17,820 XP</div>
-              <div class="text-xs text-gray-400">138 battles won</div>
-            </div>
-          </div>
-
-          <div class="leaderboard-row p-4 flex items-center gap-4">
-            <div class="w-8 text-center text-2xl">🥉</div>
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center font-bold">VR</div>
-            <div class="flex-1">
-              <div class="font-semibold">Vikram Reddy</div>
-              <div class="text-xs text-gray-400">JEE Main • Hyderabad</div>
-            </div>
-            <div class="text-right">
-              <div class="gold-text font-bold">16,940 XP</div>
-              <div class="text-xs text-gray-400">129 battles won</div>
-            </div>
-          </div>
-
-          <div class="p-4 flex items-center gap-4 opacity-70">
-            <div class="w-8 text-center font-bold text-gray-400">4</div>
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center font-bold">AN</div>
-            <div class="flex-1">
-              <div class="font-semibold">Ananya Nair</div>
-              <div class="text-xs text-gray-400">NEET • Bangalore</div>
-            </div>
-            <div class="text-right">
-              <div class="text-gray-300 font-bold">15,670 XP</div>
-              <div class="text-xs text-gray-400">121 battles won</div>
-            </div>
-          </div>
-
-          <div class="p-4 flex items-center gap-4 opacity-70">
-            <div class="w-8 text-center font-bold text-gray-400">5</div>
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center font-bold">RS</div>
-            <div class="flex-1">
-              <div class="font-semibold">Rohan Sharma</div>
-              <div class="text-xs text-gray-400">JEE Advanced • Kota</div>
-            </div>
-            <div class="text-right">
-              <div class="text-gray-300 font-bold">14,890 XP</div>
-              <div class="text-xs text-gray-400">115 battles won</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="p-6 bg-gradient-to-r from-yellow-500/10 to-transparent border-t border-white/5">
-          <div class="flex items-center justify-between flex-wrap gap-4">
-            <div>
-              <div class="font-bold">Your rank: <span class="gold-text">#2,847</span></div>
-              <div class="text-xs text-gray-400">Keep battling to climb higher!</div>
-            </div>
-            <a href="https://lasttopper.lovable.app/auth" class="glow-btn px-6 py-3 rounded-full text-sm font-bold">
-              Join the Battle →
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials -->
-<section class="py-24 hero-bg">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <div class="inline-block px-4 py-1 rounded-full exam-badge text-yellow-300 text-xs font-semibold mb-4">SUCCESS STORIES</div>
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Loved by <span class="gold-text">Toppers</span></h2>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="feature-card p-6 rounded-2xl">
-        <div class="flex items-center gap-1 text-yellow-400 mb-3">★★★★★</div>
-        <p class="text-gray-300 text-sm mb-4 leading-relaxed">"The battle mode kept me motivated throughout my NEET prep. I scored 685/720 and got AIIMS Delhi. LastTopper's AI questions were exactly like the actual exam!"</p>
-        <div class="flex items-center gap-3 pt-4 border-t border-white/10">
-          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-400 to-red-400 flex items-center justify-center font-bold">P</div>
-          <div>
-            <div class="font-semibold text-sm">Priya Mehta</div>
-            <div class="text-xs text-yellow-400">NEET 2025 • AIR 142</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature-card p-6 rounded-2xl">
-        <div class="flex items-center gap-1 text-yellow-400 mb-3">★★★★★</div>
-        <p class="text-gray-300 text-sm mb-4 leading-relaxed">"The AI weakness analysis is magical. It identified my weak areas in Organic Chemistry and created custom practice sets. Cracked IIT Bombay with 99.8 percentile!"</p>
-        <div class="flex items-center gap-3 pt-4 border-t border-white/10">
-          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center font-bold">A</div>
-          <div>
-            <div class="font-semibold text-sm">Aditya Singh</div>
-            <div class="text-xs text-yellow-400">JEE Advanced 2025 • AIR 89</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature-card p-6 rounded-2xl">
-        <div class="flex items-center gap-1 text-yellow-400 mb-3">★★★★★</div>
-        <p class="text-gray-300 text-sm mb-4 leading-relaxed">"Competing with friends in battle mode made studying fun! We pushed each other every day. Best investment for my JEE Main preparation. Scored 99.5 percentile."</p>
-        <div class="flex items-center gap-3 pt-4 border-t border-white/10">
-          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 flex items-center justify-center font-bold">K</div>
-          <div>
-            <div class="font-semibold text-sm">Kavya Reddy</div>
-            <div class="text-xs text-yellow-400">JEE Main 2025 • 99.5%ile</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-24 bg-black/50 relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-br from-yellow-900/5 via-transparent to-blue-900/5"></div>
-  
-  <div class="max-w-5xl mx-auto px-6 relative z-10">
-    <div class="text-center mb-12">
-      <div class="inline-block px-4 py-1 rounded-full exam-badge text-yellow-300 text-xs font-semibold mb-4">GET IN TOUCH</div>
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Have a Question? <span class="gold-text">We're Here.</span></h2>
-      <p class="text-gray-400 max-w-2xl mx-auto">Send us a message and our team will get back to you within 24 hours. We love hearing from our aspirants!</p>
-    </div>
-
-    <div class="grid md:grid-cols-5 gap-8">
-      <!-- Contact Info -->
-      <div class="md:col-span-2 space-y-4">
-        <div class="feature-card p-6 rounded-2xl">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-2xl">💬</div>
-            <div>
-              <div class="font-bold">Telegram Support</div>
-              <div class="text-xs text-gray-400">Fastest response channel</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-card p-6 rounded-2xl">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center text-2xl">⚡</div>
-            <div>
-              <div class="font-bold">24/7 AI Assistant</div>
-              <div class="text-xs text-gray-400">Available inside the app</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-card p-6 rounded-2xl">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-2xl">📧</div>
-            <div>
-              <div class="font-bold">Email Support</div>
-              <div class="text-xs text-gray-400">foolmr43@gmail.com</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-card p-6 rounded-2xl">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500 to-rose-700 flex items-center justify-center text-2xl">🕐</div>
-            <div>
-              <div class="font-bold">Response Time</div>
-              <div class="text-xs text-gray-400">Usually within 2 hours</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact Form -->
-      <div class="md:col-span-3">
-        <form id="contactForm" class="bg-gradient-to-br from-[#1a1a2e] to-[#0a0e27] border border-yellow-500/20 rounded-3xl p-8 shadow-2xl">
-          <div class="space-y-5">
-            <div>
-              <label class="block text-sm font-semibold mb-2 text-gray-300">Your Name</label>
-              <input type="text" id="contactName" required placeholder="e.g. Rahul Sharma" class="contact-input w-full px-4 py-3 rounded-xl" />
-            </div>
-            <div>
-              <label class="block text-sm font-semibold mb-2 text-gray-300">Email Address</label>
-              <input type="email" id="contactEmail" required placeholder="rahul@example.com" class="contact-input w-full px-4 py-3 rounded-xl" />
-            </div>
-            <div>
-              <label class="block text-sm font-semibold mb-2 text-gray-300">Preparing For</label>
-              <select id="contactExam" class="contact-input w-full px-4 py-3 rounded-xl">
-                <option value="NEET 2026">NEET </option>
-                <option value="JEE Main 2026">JEE Main </option>
-                <option value="JEE Advanced 2026">JEE Advanced </option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-sm font-semibold mb-2 text-gray-300">Your Message</label>
-              <textarea id="contactMessage" required rows="4" placeholder="Tell us how we can help you..." class="contact-input w-full px-4 py-3 rounded-xl resize-none"></textarea>
-            </div>
-          </div>
-
-          <button type="submit" id="submitBtn" class="glow-btn w-full mt-6 px-8 py-4 rounded-xl text-lg font-bold flex items-center justify-center gap-3">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
-            <span id="btnText">Submit</span>
-            <span id="btnLoader" class="hidden">
-              <svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path></svg>
-            </span>
-          </button>
-
-          <p class="text-xs text-gray-500 text-center mt-4"> Your information is secure and never shared with third parties.</p>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Final CTA Section -->
-<section class="py-24 relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-br from-yellow-600/20 via-[#0a0e27] to-blue-600/20"></div>
-  <div class="absolute inset-0 shimmer"></div>
-  
-  <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-    <img src="https://image.qwenlm.ai/public_source/3ff4c453-4740-4726-944b-db011792306d/1e04ab4d0-864b-46d5-98b4-f9fc0593e469.png" alt="LastTopper" class="w-24 h-24 mx-auto mb-6 rounded-2xl shadow-2xl float-anim" />
-    <h2 class="text-4xl md:text-6xl font-bold mb-6">Ready to become the <span class="gold-text">Last Topper?</span></h2>
-    <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Join 25,000+ NEET & IIT JEE aspirants. AI-powered questions. Live battles. Real results.</p>
-    <a href="https://lasttopper.lovable.app/auth" class="glow-btn cta-pulse inline-flex items-center gap-3 px-12 py-5 rounded-full text-xl font-bold">
-      Continue to Learn
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+    <!-- Floating Download Button (Mobile) -->
+    <a href="https://github.com/lasttopper/lasttopper.github.io/releases/download/LastTopper/LastTopper.apk" download="LastTopper.apk" class="fixed bottom-6 right-6 z-50 md:hidden download-btn inline-flex items-center px-5 py-3 rounded-full text-sm">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        Download App
     </a>
-    <div class="mt-6 text-sm text-gray-400">✓ Free to start • ✓ No credit card required • ✓ Instant access</div>
-  </div>
-</section>
 
-<!-- Footer -->
-<footer class="bg-black/70 border-t border-yellow-500/10 py-12">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-4 gap-8 mb-8">
-      <div>
-        <div class="flex items-center gap-3 mb-4">
-          <img src="https://image.qwenlm.ai/public_source/3ff4c453-4740-4726-944b-db011792306d/1e04ab4d0-864b-46d5-98b4-f9fc0593e469.png" alt="LastTopper" class="w-10 h-10 rounded-xl" />
-          <span class="text-lg font-bold">Last<span class="gold-text">Topper</span></span>
+    <!-- Quick Contact Floating Button -->
+    <div id="quickContact" class="fixed bottom-6 left-6 z-50">
+        <button id="toggleQuickContact" class="w-14 h-14 bg-[#FF6B9D] neo-border neo-shadow rounded-full flex items-center justify-center hover:translate-y-[-2px] transition">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+        </button>
+        <div id="quickContactPanel" class="hidden absolute bottom-16 left-0 w-72 bg-white neo-border-thick neo-shadow-lg rounded-2xl p-4">
+            <div class="flex items-center justify-between mb-3">
+                <h4 class="font-black text-sm">Quick Contact</h4>
+                <button id="closeQuickContact" class="w-7 h-7 neo-border bg-[#FF5757] text-white rounded flex items-center justify-center text-xs font-bold">✕</button>
+            </div>
+            <p class="text-gray-600 text-xs font-medium mb-3">Need help? Our support team is ready to assist you.</p>
+            <a href="https://lasttopper.lovable.app/auth" class="neo-btn bg-[#FF6B9D] text-white w-full inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm">Open App</a>
         </div>
-        <p class="text-gray-400 text-sm">India's #1 AI-powered NEET & IIT JEE preparation platform with live battle mode.</p>
-      </div>
-      <div>
-        <h4 class="font-bold mb-3 text-sm gold-text">Exams</h4>
-        <ul class="space-y-2 text-sm text-gray-400">
-          <li><a href="#" class="hover:text-yellow-400 transition">NEET </a></li>
-          <li><a href="#" class="hover:text-yellow-400 transition">JEE Main</a></li>
-          <li><a href="#" class="hover:text-yellow-400 transition">JEE Advanced</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-bold mb-3 text-sm gold-text">Features</h4>
-        <ul class="space-y-2 text-sm text-gray-400">
-          <li><a href="#features" class="hover:text-yellow-400 transition">AI Questions</a></li>
-          <li><a href="#battle" class="hover:text-yellow-400 transition">Battle Mode</a></li>
-          <li><a href="#" class="hover:text-yellow-400 transition">Mock Tests</a></li>
-          <li><a href="#leaderboard" class="hover:text-yellow-400 transition">Leaderboard</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-bold mb-3 text-sm gold-text">Legal & Support</h4>
-        <ul class="space-y-2 text-sm text-gray-400">
-          <li><a href="https://lasttopper.lovable.app/terms" target="_blank" rel="noopener" class="hover:text-yellow-400 transition">Terms of Service</a></li>
-          <li><a href="https://lasttopper.lovable.app/privacy" target="_blank" rel="noopener" class="hover:text-yellow-400 transition">Privacy Policy</a></li>
-          <li><a href="#contact" class="hover:text-yellow-400 transition">Contact Us</a></li>
-        </ul>
-      </div>
     </div>
-    <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-      <div>© 2026 LastTopper. All rights reserved. Made with ❤️ for Indian aspirants.</div>
-      <div class="flex items-center gap-4">
-        <a href="https://lasttopper.lovable.app/terms" target="_blank" rel="noopener" class="hover:text-yellow-400 transition">Terms</a>
-        <span>•</span>
-        <a href="https://lasttopper.lovable.app/privacy" target="_blank" rel="noopener" class="hover:text-yellow-400 transition">Privacy</a>
-      </div>
-    </div>
-  </div>
-</footer>
 
-<!-- Contact Modal (for mobile quick action) -->
-<div id="contactModal" class="modal-overlay">
-  <div class="modal-content">
-    <div class="flex items-center justify-between mb-4">
-      <h3 class="text-xl font-bold">Quick Contact</h3>
-      <button id="closeModal" class="text-gray-400 hover:text-white">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-      </button>
-    </div>
-    <p class="text-gray-400 text-sm mb-4">Need help? Our Telegram bot is ready to assist you.</p>
-    <a href="https://lasttopper.lovable.app/auth" class="glow-btn w-full text-center block py-3 rounded-xl font-bold mb-3">Open App</a>
-    <button id="closeModalBtn" class="w-full py-3 rounded-xl border border-white/10 text-gray-300 hover:bg-white/5 transition">Close</button>
-  </div>
-</div>
+    <script>
+        // Mobile menu
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.add('open');
+        });
+        document.getElementById('closeMobileMenu').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.remove('open');
+        });
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.remove('open');
+            });
+        });
 
-<!-- Toast Notification -->
-<div id="toast" class="toast"></div>
+        // Quick contact toggle
+        document.getElementById('toggleQuickContact').addEventListener('click', () => {
+            document.getElementById('quickContactPanel').classList.toggle('hidden');
+        });
+        document.getElementById('closeQuickContact').addEventListener('click', () => {
+            document.getElementById('quickContactPanel').classList.add('hidden');
+        });
 
-<script>
-  // Smooth scroll for nav links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
+        // Scroll animations
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
 
-  // Intersection observer for fade-in animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.feature-card, .battle-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'all 0.6s ease';
-    observer.observe(el);
-  });
-
-  // Toast helper
-  function showToast(message, type = 'success') {
-    const toast = document.getElementById('toast');
-    toast.textContent = message;
-    toast.className = 'toast ' + type;
-    setTimeout(() => toast.classList.add('show'), 10);
-    setTimeout(() => toast.classList.remove('show'), 4000);
-  }
-
-  // Contact Form - Send to Telegram
-  const TELEGRAM_BOT_TOKEN = '8625772033:AAEJXPcrQLTwUHE4SR18Rw8YBSIWkgrxNSU';
-  const TELEGRAM_CHAT_ID = '8230248537';
-  const TELEGRAM_API_URL = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-
-  document.getElementById('contactForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
-
-    const name = document.getElementById('contactName').value.trim();
-    const email = document.getElementById('contactEmail').value.trim();
-    const exam = document.getElementById('contactExam').value;
-    const message = document.getElementById('contactMessage').value.trim();
-    const submitBtn = document.getElementById('submitBtn');
-    const btnText = document.getElementById('btnText');
-    const btnLoader = document.getElementById('btnLoader');
-
-    if (!name || !email || !message) {
-      showToast('Please fill all required fields.', 'error');
-      return;
-    }
-
-    // Disable button & show loader
-    submitBtn.disabled = true;
-    btnText.textContent = 'Sending...';
-    btnLoader.classList.remove('hidden');
-
-    const formattedMessage = ` *New Contact Message*\n\n` +
-      `👤 *Name:* ${name}\n` +
-      `📧 *Email:* ${email}\n` +
-      ` *Exam:* ${exam}\n` +
-      `📝 *Message:*\n${message}\n\n` +
-      ` *Time:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}\n` +
-      ` *Source:* LastTopper Landing Page`;
-
-    try {
-      const response = await fetch(TELEGRAM_API_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          chat_id: TELEGRAM_CHAT_ID,
-          text: formattedMessage,
-          parse_mode: 'Markdown'
-        })
-      });
-
-      const data = await response.json();
-
-      if (data.ok) {
-        showToast('✅ Message sent successfully! We\'ll reply soon.', 'success');
-        document.getElementById('contactForm').reset();
-      } else {
-        throw new Error(data.description || 'Failed to send');
-      }
-    } catch (err) {
-      console.error('Telegram send error:', err);
-      showToast('❌ Failed to send. Please try again.', 'error');
-    } finally {
-      submitBtn.disabled = false;
-      btnText.textContent = 'Submit';
-      btnLoader.classList.add('hidden');
-    }
-  });
-
-  // Modal handlers
-  document.getElementById('closeModal').addEventListener('click', () => {
-    document.getElementById('contactModal').classList.remove('active');
-  });
-  document.getElementById('closeModalBtn').addEventListener('click', () => {
-    document.getElementById('contactModal').classList.remove('active');
-  });
-  document.getElementById('contactModal').addEventListener('click', (e) => {
-    if (e.target === e.currentTarget) {
-      e.currentTarget.classList.remove('active');
-    }
-  });
-</script>
+        document.querySelectorAll('.neo-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.5s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
